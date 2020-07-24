@@ -1,2 +1,2 @@
 # CSSFiles
-CSS测试文件仓库
+CSS文件仓库
