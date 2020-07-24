@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="selectorCss.css" />
+		<style type="text/css">
+			/* 派生选择器*/
+			li strong {
+			    font-style: italic;
+				color: coral;
+			    font-weight: normal;
+			  }
+			#red{
+				color: red
+			}
+			.hblue{
+				color: blue
+			}
+			
+			#mutilselector p{
+				font-family: 微软雅黑;
+				font-size: large;
+			}
+			
+			input[type="button"]
+			{
+			  width:120px;
+			  margin-left:35px;
+			  display:block;
+			  font-family: Verdana, Arial;
+			  border-radius: 4px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<h3>选择器</h3>
+		<ol>
+		<li><strong>派生选择器</strong></li>
+		<li><strong>派生选择器</strong></li>
+		
+		<li><p id="red">id选择器</p></li>
+		
+		<li><p class="hblue">类选择器</p></li>
+		<li><p class="hblue">类选择器</p></li>
+		
+		</ol>
+		<div id="mutilselector">
+			<p>多重选择器</p>
+			<p>多重选择器</p>
+		</div>
+		<br />
+		<h3>属性选择器</h3>
+		<input type="button" value="属性选择器1" />
+		<input type="button" value="属性选择器2" />
+		<h3>连接外部css文件</h3>
+		<input type="button" id="btnTest" value="外部样式文件" />
+		
+	</body>
+</html>
