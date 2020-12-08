@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="../css/selectorCss.css" />
+		
 		<style type="text/css">
 			/* 派生选择器*/
 			li strong {
@@ -11,9 +11,11 @@
 				color: coral;
 			    font-weight: normal;
 			  }
+			 /* id选择 */
 			#red{
 				color: red
 			}
+			/* 类选择 */
 			.hblue{
 				color: blue
 			}
@@ -31,31 +33,56 @@
 			  font-family: Verdana, Arial;
 			  border-radius: 4px;
 			}
+			/*属性有title*/
+			[title]{
+				color: red;
+			}
+			/*属性有href和title的a标签*/
+			a[href][title]{
+				font-size:20px ;
+			}
 			
+			h4,h5 {
+				color: red;
+			}
+li a{
+	color: red;
+}
+
+#btnTest{
+	color: #ffff00;
+	background-color: #55ff00;
+}
 		</style>
+		<link rel="stylesheet" type="text/css" href="../css/selectorCss.css" />
 	</head>
 	<body>
+		
 		<h3>选择器</h3>
+		
+		<li><a href="#">wwww</a></li>
+		<!--不是严格的父子元素不生效-->
+		<li><div><a href="#">xxx</a></div></li>
+		
 		<ol>
-		<li><strong>派生选择器</strong></li>
-		<li><strong>派生选择器</strong></li>
-		
-		<li><p id="red">id选择器</p></li>
-		
-		<li><p class="hblue">类选择器</p></li>
-		<li><p class="hblue">类选择器</p></li>
-		
+			<li><strong>派生选择器</strong></li>
+			<li><strong>派生选择器</strong></li>
+			<li><p id="red" class="hblue">id选择器</p></li>
+			<li><p class="hblue">类选择器</p></li>
 		</ol>
 		<div id="mutilselector">
-			<p>多重选择器</p>
 			<p>多重选择器</p>
 		</div>
 		<br />
 		<h3>属性选择器</h3>
 		<input type="button" value="属性选择器1" />
 		<input type="button" value="属性选择器2" />
+		<a href="#" title="test">属性选择器</a>
+		
 		<h3>连接外部css文件</h3>
 		<input type="button" id="btnTest" value="外部样式文件" />
 		
+		<h4>组合选择</h4>
+		<h5>组合选择</h5>
 	</body>
 </html>
