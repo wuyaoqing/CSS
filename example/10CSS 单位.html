@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				font-size: 14px;
+			}
+
+			div {
+				/* 根据父级逐渐放大 */
+				font-size: 1.2em;  
+				/* 相对于html根节点缩放 */
+				/* font-size: 1.2rem; */ 
+			}
+		</style>
+	</head>
+	<body>
+
+		<!-- 
+		
+https://www.w3cplus.com/css/7-css-units-you-might-not-know-about.html 
+https://blog.csdn.net/xiaoyaopikaqiu/article/details/102749710
+-->
+		<div>Test
+			<!-- 14 * 1.2 = 16.8px -->
+			<div>Test
+				<!-- 16.8 * 1.2 = 20.16px  -->
+				<div>Test</div> <!-- 20.16 * 1.2 = 24.192px  -->
+			</div>
+		</div>
+	
+	<textarea rows="5" cols="99">
+	vh等于viewport高度的1/100.
+	例如，如果浏览器的高是900px,1vh求得的值为9px。
+	同理，如果显示窗口宽度为750px,1vw求得的值为7.5px。
+	当减少窗口高度字体大小也随着改变
+	</textarea>	
+	 <div style="font-size: 8vh;">Test</div>
+	</body>
+</html>

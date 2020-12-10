@@ -23,8 +23,6 @@
 				width: 150px;
 				height: 80px;
 				float: left;
-				/* 清除浮动，不再靠在div2后面 */
-				clear: left;
 			}
 			#div4{
 				background-color: #BBFFFF;
@@ -32,13 +30,19 @@
 				height: 60px;
 				float: left;
 			}
+			#div5{
+				clear: left;
+			}
 		</style>
 	</head>
 	<body>
+		<p>浮动元素div2遇到非浮动元素div1会跟在div1后面</p>
+		<p>下面div2，div3和div4设置左侧浮动，div5去除浮动，当浏览器宽度不够，div会换行</p>
 		<!-- https://www.cnblogs.com/iyangyuan/archive/2013/03/27/2983813.html -->
 		<div id="div1">div1</div>
 		<div id="div2">div2</div>	
 		<div id="div3">div3</div>	
 		<div id="div4">div4</div>	
+		<div id="div5">div5</div>
 	</body>
 </html>
