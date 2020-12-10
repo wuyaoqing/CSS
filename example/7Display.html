@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			h1.hidden{
+				visibility: hidden;
+			}
+			h1.hidden2{
+				display: none;
+			}
+			li{display: inline-block;}
+		</style>
+	</head>
+	<body>
+		<!-- https://www.runoob.com/css/css-display-visibility.html -->
+		<h1>这是一个可见标题</h1>
+		<h1 class="hidden">这是一个隐藏标题</h1>
+		<p>注意, 实例中的隐藏标题仍然占用空间。</p>
+		<h1 class="hidden2">这是一个隐藏标题</h1>
+		<p>注意, display: none不会占用空间。</p>
+		
+		<p>块级元素block是一个元素，占用全部宽度，前后都是换行符比如h1 p div标签</p>
+		<p>内联元素是inline只需要必要的宽度不强制换行比如 span a标签</p>
+		<h3>将块级元素转内联元素</h3>
+		<h3>    display:block  -- 显示为块级元素
+    display:inline  -- 显示为内联元素
+    display:inline-block -- 显示为内联块元素，表现为同行显示并可修改宽高内外边距等属性
+我们常将所有&lt;li&gt;元素加上display:inline-block样式，原本垂直的列表就可以水平显示了。</h3>
+		<ul>
+			<li>我是块级元素1</li>
+			<li>我是块级元素2</li>
+		</ul>
+	</body>
+</html>
