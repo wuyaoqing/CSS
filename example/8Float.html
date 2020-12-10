@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>div的浮动</title>
+		<style type="text/css">
+			div{
+				border: 0.0625rem solid;
+			}
+			#div1{
+				background-color: red;
+				width: 200px;
+				height: 100px;
+			}
+			#div2{
+				background-color: yellowgreen;
+				width: 350px;
+				height: 40px;
+				float: left;
+			}
+			#div3{
+				background-color: yellow;
+				width: 150px;
+				height: 80px;
+				float: left;
+				/* 清除浮动，不再靠在div2后面 */
+				clear: left;
+			}
+			#div4{
+				background-color: #BBFFFF;
+				width: 250px;
+				height: 60px;
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- https://www.cnblogs.com/iyangyuan/archive/2013/03/27/2983813.html -->
+		<div id="div1">div1</div>
+		<div id="div2">div2</div>	
+		<div id="div3">div3</div>	
+		<div id="div4">div4</div>	
+	</body>
+</html>
